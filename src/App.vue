@@ -1,12 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
+import {RouterView} from "vue-router";
 </script>
 
 <template>
   <div class="flex justify-center items-center bg-gray-500 h-screen">
-
-  <HelloWorld  msg="Vite + Vue" />
+    <main>
+      <RouterView/>
+    </main>
   </div>
 </template>
 
