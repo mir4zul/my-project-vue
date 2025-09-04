@@ -1,20 +1,18 @@
 <script setup>
-import {ref} from "vue";
+import swal from "sweetalert"; // ✅ Import sweetalert
 
-let message = ref('About page')
-
-setTimeout(() => {
-  message.value = 'About page updated'
-}, 2000)
-
+// define function
+const flash = (message) => {
+  swal("Success", message, "success");
+}
 </script>
 
 <template>
   <div>
     <RouterLink to="/">Home</RouterLink>
     <h1>About</h1>
-    {{ message }}
 
-    <input v-model="message" class="border border-gray-300 rounded" type="text">
+    <!-- ✅ this will now work -->
+    <button @click="flash('It works!')">Flash</button>
   </div>
 </template>
