@@ -16,7 +16,5 @@ setTimeout(() => {
     {{ message }}
 
     <input v-model="message" class="border border-gray-300 rounded" type="text">
-    <input v-model="message" class="border border-gray-300 rounded" type="text">
-    <input v-model="message" class="border border-gray-300 rounded" type="text">
   </div>
 </template>
